@@ -17,9 +17,9 @@ class Game
   def self.code  # class-level getter
     @@code
   end
-  
+
   def code_creation
-    if @mastermind == Player
+    if @mastermind.class == Player
       player_color_picker()
     else
       computer_color_picker()
